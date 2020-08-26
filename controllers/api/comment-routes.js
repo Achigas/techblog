@@ -2,9 +2,9 @@ const router = require('express').Router();
 const { Comment } = require('../../models');
 
 
-router.get('/', (req, res) => {
+// router.get('/', (req, res) => {
 
-});
+// });
 
 router.post('/', (req, res) => {
     Comment.create({
@@ -18,3 +18,6 @@ router.post('/', (req, res) => {
         res.status(400).json(err);
     });
 });
+
+
+module.exports = router;

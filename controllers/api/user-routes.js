@@ -94,3 +94,6 @@ router.post('/', (req, res) => {
           res.json({ user: dbUserData, message: 'You are now logged in!' });
       });  
     });
+
+
+  module.exports = router;
